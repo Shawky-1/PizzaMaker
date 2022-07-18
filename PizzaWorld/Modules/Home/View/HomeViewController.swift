@@ -9,28 +9,40 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class HomeViewController: UIViewController{
+class HomeViewController: BaseWireFrame<HomeViewModel>{
 
     @IBOutlet weak var sliderCollectionView:UICollectionView!
+    @IBOutlet weak var popularTableView: UITableView!
     
-    let viewModel = HomeViewModel()
-    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         registerCells()
-        bind()
         viewModel.viewDidLoad()
+        setupPopularTableView()
     }
     
-    
-    func bind() {
+    override func bind(viewModel: HomeViewModel) {
         viewModel.slideToItem.subscribe { [weak self] (index) in
             self?.sliderCollectionView.scrollToItem(at: IndexPath(row: index, section: 0), at: .centeredHorizontally, animated: true)
         }.disposed(by: disposeBag)
         viewModel.slides.subscribe { [weak self] (_) in
             self?.sliderCollectionView.reloadData()
+        }.disposed(by: disposeBag)
+    }
+    
+    func setupPopularTableView() {
+        popularTableView.rx.setDelegate(self).disposed(by: disposeBag)
+
+        viewModel.popularItems.asObservable()
+            .bind(to: popularTableView.rx.items(cellIdentifier: String(describing: PopularCell.self), cellType: PopularCell.self)) { index, model, cell in
+//                cell.ratingView.configureWithRating(rating: 5, Style: .compact)
+                cell.ratingView.configureWithRating(rating: 3, Style: .compact)
+        }.disposed(by: disposeBag)
+
+        popularTableView.rx.itemSelected.subscribe { [weak self] (indexPath) in
+//            guard let self = self, let indexPath = indexPath.element else { return }
         }.disposed(by: disposeBag)
     }
 
@@ -42,22 +54,15 @@ class HomeViewController: UIViewController{
     
     private func registerCells() {
         sliderCollectionView.registerCell(cellClass: SliderCell.self)
+        popularTableView.registerCellNib(cellClass: PopularCell.self)
     }
-    
-    init() {
-        super.init(nibName: "HomeViewController", bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+
 }
 
 //MARK: Slider Datasource
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewModel.didSelectItem()
+        coordenator.Main.navigate(to: .home)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

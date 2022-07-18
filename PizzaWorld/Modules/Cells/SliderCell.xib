@@ -138,9 +138,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nix-XU-bau" firstAttribute="leading" secondItem="hr7-qR-XgB" secondAttribute="leading" id="0Cs-CI-xof"/>
                                     <constraint firstItem="nix-XU-bau" firstAttribute="top" secondItem="QVZ-jk-Bu8" secondAttribute="bottom" id="IYh-7o-ltD"/>
-                                    <constraint firstAttribute="bottom" secondItem="nix-XU-bau" secondAttribute="bottom" id="ekt-9T-CiX"/>
                                 </constraints>
                             </stackView>
                         </subviews>

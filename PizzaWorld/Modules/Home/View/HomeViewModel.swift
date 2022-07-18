@@ -11,11 +11,17 @@ import RxCocoa
 
 class HomeViewModel {
     private var sliderTimer:Timer?
-    var slides: BehaviorRelay<[Int]> = .init(value: [1])
+    var slides: BehaviorRelay<[Int]> = .init(value: [1, 2, 3])
+    var popularItems: BehaviorRelay<[Product]> = .init(value: [
+        .init(title: "test"),
+        .init(title: "test"),
+        .init(title: "test"),
+        .init(title: "test")
+    ])
+
     private var currentSlide = 0
     
     // Outputs
-//    var slideToItemAtIndex: ((Int) -> Void)?
     var slideToItem: PublishSubject<Int> = .init()
     
     // Inputs
@@ -26,7 +32,6 @@ class HomeViewModel {
         let nextSlide = currentSlide + 1
         currentSlide = nextSlide % slides.value.count
         slideToItem.onNext(currentSlide)
-//        slideToItemAtIndex?(currentSlide)
     }
     
     func didSelectItem(){

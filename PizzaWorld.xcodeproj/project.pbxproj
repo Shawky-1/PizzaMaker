@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23BC6792884747D0053B6AE /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC6782884747D0053B6AE /* CustomTabBarController.swift */; };
+		E23BC67B28847BD20053B6AE /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC67A28847BD20053B6AE /* CustomTabBar.swift */; };
+		E23BC67D288480CF0053B6AE /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC67C288480CF0053B6AE /* UIColor+Extentions.swift */; };
+		E23BC68028848C380053B6AE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC67F28848C380053B6AE /* AppCoordinator.swift */; };
+		E23BC6832884E73A0053B6AE /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC6822884E73A0053B6AE /* MainNavigator.swift */; };
+		E23BC6862884E75A0053B6AE /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC6852884E75A0053B6AE /* Navigator.swift */; };
+		E23BC688288517810053B6AE /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BC687288517810053B6AE /* BaseWireFrame.swift */; };
 		E26DE07927C6A1DE00CA7739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DE07827C6A1DE00CA7739 /* AppDelegate.swift */; };
 		E26DE08227C6A1E000CA7739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26DE08127C6A1E000CA7739 /* Assets.xcassets */; };
 		E26DE08527C6A1E000CA7739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E26DE08327C6A1E000CA7739 /* LaunchScreen.storyboard */; };
@@ -18,12 +25,23 @@
 		E26DE0A427C7D22800CA7739 /* UIView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DE0A327C7D22800CA7739 /* UIView+Extentions.swift */; };
 		E26DE0A927C7EC0800CA7739 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26DE0A827C7EC0800CA7739 /* RatingView.swift */; };
 		E280507B287AD5E3001D213F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280507A287AD5E3001D213F /* HomeViewModel.swift */; };
+		E2D4201E288206EF00E181C1 /* PopularCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4201C288206EF00E181C1 /* PopularCell.swift */; };
+		E2D4202128822C7400E181C1 /* UITableView+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4202028822C7400E181C1 /* UITableView+Extentions.swift */; };
+		E2D4202428822CFB00E181C1 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D4202328822CFB00E181C1 /* Product.swift */; };
+		E2D420262882FDE400E181C1 /* PopularCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D420252882FDE400E181C1 /* PopularCell.xib */; };
 		F572B1C065F0B6D09200EE57 /* Pods_PizzaWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F3BB761BBC3A042F1FDC5B /* Pods_PizzaWorld.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26DAAE617856615A00DB65EA /* Pods-PizzaWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld.debug.xcconfig"; path = "Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		76F3BB761BBC3A042F1FDC5B /* Pods_PizzaWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E23BC6782884747D0053B6AE /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		E23BC67A28847BD20053B6AE /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		E23BC67C288480CF0053B6AE /* UIColor+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
+		E23BC67F28848C380053B6AE /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E23BC6822884E73A0053B6AE /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		E23BC6852884E75A0053B6AE /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		E23BC687288517810053B6AE /* BaseWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
 		E26DE07527C6A1DE00CA7739 /* PizzaWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26DE07827C6A1DE00CA7739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E26DE08127C6A1E000CA7739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +55,10 @@
 		E26DE0A327C7D22800CA7739 /* UIView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extentions.swift"; sourceTree = "<group>"; };
 		E26DE0A827C7EC0800CA7739 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		E280507A287AD5E3001D213F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E2D4201C288206EF00E181C1 /* PopularCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCell.swift; sourceTree = "<group>"; };
+		E2D4202028822C7400E181C1 /* UITableView+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extentions.swift"; sourceTree = "<group>"; };
+		E2D4202328822CFB00E181C1 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		E2D420252882FDE400E181C1 /* PopularCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopularCell.xib; path = ../../../../PizzaMakerRefrence/PizzaWorld/Modules/Home/Cells/PopularCell.xib; sourceTree = "<group>"; };
 		E661B393E7D3CAAA806A2544 /* Pods-PizzaWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaWorld.release.xcconfig"; path = "Target Support Files/Pods-PizzaWorld/Pods-PizzaWorld.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,8 +88,42 @@
 				26DAAE617856615A00DB65EA /* Pods-PizzaWorld.debug.xcconfig */,
 				E661B393E7D3CAAA806A2544 /* Pods-PizzaWorld.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E23BC6772884724A0053B6AE /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC6782884747D0053B6AE /* CustomTabBarController.swift */,
+				E23BC67A28847BD20053B6AE /* CustomTabBar.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		E23BC67E28848C220053B6AE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC67F28848C380053B6AE /* AppCoordinator.swift */,
+				E23BC6842884E74E0053B6AE /* Protocols */,
+				E23BC6812884E7260053B6AE /* Navigators */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E23BC6812884E7260053B6AE /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC6822884E73A0053B6AE /* MainNavigator.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
+		E23BC6842884E74E0053B6AE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC6852884E75A0053B6AE /* Navigator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E26DE06C27C6A1DE00CA7739 = {
@@ -91,9 +147,10 @@
 		E26DE07727C6A1DE00CA7739 /* PizzaWorld */ = {
 			isa = PBXGroup;
 			children = (
+				E2D4202228822CEB00E181C1 /* model */,
 				E26DE0A527C7EBDA00CA7739 /* Core */,
 				E26DE09927C7C9D200CA7739 /* Extentions */,
-				E26DE09827C7C9CF00CA7739 /* Utility */,
+				E2D4201B287DB5A300E181C1 /* Utilities */,
 				E26DE09727C7C9C800CA7739 /* Modules */,
 				E26DE09627C7C9AA00CA7739 /* Common */,
 				E26DE08627C6A1E000CA7739 /* Info.plist */,
@@ -114,17 +171,10 @@
 		E26DE09727C7C9C800CA7739 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E26DE09C27C7CA6500CA7739 /* Cells */,
 				E26DE09A27C7CA1100CA7739 /* Home */,
+				E26DE09C27C7CA6500CA7739 /* Cells */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		E26DE09827C7C9CF00CA7739 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		E26DE09927C7C9D200CA7739 /* Extentions */ = {
@@ -132,6 +182,8 @@
 			children = (
 				E26DE0A127C7CF0F00CA7739 /* UICollectionView+Extentions.swift */,
 				E26DE0A327C7D22800CA7739 /* UIView+Extentions.swift */,
+				E2D4202028822C7400E181C1 /* UITableView+Extentions.swift */,
+				E23BC67C288480CF0053B6AE /* UIColor+Extentions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -159,6 +211,8 @@
 			children = (
 				E26DE09D27C7CA7F00CA7739 /* SliderCell.swift */,
 				E26DE09E27C7CA7F00CA7739 /* SliderCell.xib */,
+				E2D4201C288206EF00E181C1 /* PopularCell.swift */,
+				E2D420252882FDE400E181C1 /* PopularCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -166,6 +220,7 @@
 		E26DE0A527C7EBDA00CA7739 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E23BC687288517810053B6AE /* BaseWireFrame.swift */,
 				E26DE0A627C7EBDF00CA7739 /* Views */,
 			);
 			path = Core;
@@ -185,6 +240,23 @@
 				E26DE0A827C7EC0800CA7739 /* RatingView.swift */,
 			);
 			path = "Rating View";
+			sourceTree = "<group>";
+		};
+		E2D4201B287DB5A300E181C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E23BC67E28848C220053B6AE /* Coordinator */,
+				E23BC6772884724A0053B6AE /* CustomTabBar */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2D4202228822CEB00E181C1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E2D4202328822CFB00E181C1 /* Product.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +321,7 @@
 			files = (
 				E26DE08527C6A1E000CA7739 /* LaunchScreen.storyboard in Resources */,
 				E26DE08227C6A1E000CA7739 /* Assets.xcassets in Resources */,
+				E2D420262882FDE400E181C1 /* PopularCell.xib in Resources */,
 				E26DE0A027C7CA7F00CA7739 /* SliderCell.xib in Resources */,
 				E26DE09527C6AC4500CA7739 /* HomeViewController.xib in Resources */,
 			);
@@ -303,13 +376,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D4202428822CFB00E181C1 /* Product.swift in Sources */,
 				E26DE07927C6A1DE00CA7739 /* AppDelegate.swift in Sources */,
 				E26DE09F27C7CA7F00CA7739 /* SliderCell.swift in Sources */,
 				E280507B287AD5E3001D213F /* HomeViewModel.swift in Sources */,
+				E23BC67B28847BD20053B6AE /* CustomTabBar.swift in Sources */,
+				E23BC6862884E75A0053B6AE /* Navigator.swift in Sources */,
+				E23BC688288517810053B6AE /* BaseWireFrame.swift in Sources */,
 				E26DE0A427C7D22800CA7739 /* UIView+Extentions.swift in Sources */,
+				E23BC68028848C380053B6AE /* AppCoordinator.swift in Sources */,
+				E23BC6832884E73A0053B6AE /* MainNavigator.swift in Sources */,
+				E23BC6792884747D0053B6AE /* CustomTabBarController.swift in Sources */,
 				E26DE0A927C7EC0800CA7739 /* RatingView.swift in Sources */,
 				E26DE09427C6AC4500CA7739 /* HomeViewController.swift in Sources */,
 				E26DE0A227C7CF0F00CA7739 /* UICollectionView+Extentions.swift in Sources */,
+				E2D4202128822C7400E181C1 /* UITableView+Extentions.swift in Sources */,
+				E23BC67D288480CF0053B6AE /* UIColor+Extentions.swift in Sources */,
+				E2D4201E288206EF00E181C1 /* PopularCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

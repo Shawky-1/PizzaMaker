@@ -26,7 +26,7 @@ class RatingView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupUI()
-        configureWithRating(rating: 3)
+//        configureWithRating(rating: 3)
         
     }
     
@@ -40,22 +40,28 @@ class RatingView: UIView {
 
     }
     
-    func configureWithRating(rating: Int){
-        // Add filled stars
-        if rating > 0 {
-            for _ in 1...rating {
-                let image = generateStarView(.filled)
-                stackView.addArrangedSubview(image)
+    func configureWithRating(rating: Int, Style: Style = .full){
+        switch Style {
+        case .full:
+            // Add filled stars
+            if rating > 0 {
+                for _ in 1...rating {
+                    let image = generateStarView(.filled)
+                    stackView.addArrangedSubview(image)
+                }
             }
-        }
-        
-        // add non-Filled stars
-        let nonFilledCount = maximumRating - rating
-        if nonFilledCount > 0 {
-            for _ in 1...nonFilledCount {
-                let image = generateStarView(.nonFilled)
-                stackView.addArrangedSubview(image)
+            
+            // add non-Filled stars
+            let nonFilledCount = maximumRating - rating
+            if nonFilledCount > 0 {
+                for _ in 1...nonFilledCount {
+                    let image = generateStarView(.nonFilled)
+                    stackView.addArrangedSubview(image)
+                }
             }
+        case .compact:
+            let image = generateStarView(.filled)
+            stackView.addArrangedSubview(image)
         }
     }
     
@@ -70,7 +76,7 @@ class RatingView: UIView {
         
         let image = UIImageView(image: starImage)
         image.contentMode = .scaleAspectFit
-        image.widthAnchor.constraint(lessThanOrEqualToConstant: 10).isActive = true
+        image.widthAnchor.constraint(equalToConstant: 10).isActive = true
         return image
     }
     
@@ -78,6 +84,11 @@ class RatingView: UIView {
         case filled
         case nonFilled
         
+    }
+    
+    enum Style{
+        case full
+        case compact
     }
     
     

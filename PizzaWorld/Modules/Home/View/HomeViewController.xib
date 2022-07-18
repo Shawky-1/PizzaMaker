@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="PizzaWorld" customModuleProvider="target">
             <connections>
+                <outlet property="popularTableView" destination="dVk-hz-QBz" id="ZAA-FI-umT"/>
                 <outlet property="sliderCollectionView" destination="Yoo-Rz-Ke2" id="eYp-5F-45Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -42,19 +43,27 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dVk-hz-QBz">
+                    <rect key="frame" x="0.0" y="481" width="414" height="381"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7HF-lk-Prh" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="0BH-dU-Ugx"/>
                 <constraint firstItem="DzK-1P-CXl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="67Q-ic-I11"/>
+                <constraint firstItem="dVk-hz-QBz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DO5-ZA-5OR"/>
                 <constraint firstItem="Yoo-Rz-Ke2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MfA-0Y-3Af"/>
                 <constraint firstItem="7HF-lk-Prh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mg8-b9-Qxn"/>
                 <constraint firstItem="Yoo-Rz-Ke2" firstAttribute="top" secondItem="DzK-1P-CXl" secondAttribute="bottom" constant="20" id="Mgt-1u-hdP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yoo-Rz-Ke2" secondAttribute="trailing" id="N8U-nE-vLU"/>
                 <constraint firstItem="DzK-1P-CXl" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="OO3-wM-TJn"/>
                 <constraint firstItem="7HF-lk-Prh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cuE-K5-1C5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dVk-hz-QBz" secondAttribute="trailing" id="fzH-J6-Y0Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dVk-hz-QBz" secondAttribute="bottom" id="q27-o1-K40"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7HF-lk-Prh" secondAttribute="trailing" id="qAk-Iu-Kds"/>
+                <constraint firstItem="dVk-hz-QBz" firstAttribute="top" secondItem="Yoo-Rz-Ke2" secondAttribute="bottom" id="wJa-7d-26E"/>
             </constraints>
             <point key="canvasLocation" x="139" y="130"/>
         </view>
